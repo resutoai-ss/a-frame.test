@@ -23,13 +23,15 @@
 		</style>
 		
 		<script>
-		var vid = document.getElementById('video');
-		console.log(vid);
-		
-		document.getElementById('play-button').addEventListener("click", function(e){
-		  this.style.display = 'none';
-		  vid.play();
-		}, false);
+		document.addEventListener("DOMContentLoaded", function(){
+			var vid = document.getElementById('video');
+			console.log(vid);
+			
+			document.getElementById('play-button').addEventListener("click", function(e){
+			  this.style.display = 'none';
+			  vid.play();
+			}, false);
+			}, false);
 		</script>
 	</head>
 	<body>
